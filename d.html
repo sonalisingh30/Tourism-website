@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel with Onclick</title>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+
+<body>
+    <div class="productCard_imageBox">
+        <div class="productCard_inViewImgBox">
+            <!-- Carousel start -->
+            <div id="carousel_1" class="carousel_slide">
+                <!-- Slider start -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="productCard_nextImageBox">
+                            <img alt="Manali from Delhi | FREE Solang Valley Trip"
+                                src="/image/manali1.png?w=340&amp;dpr=2" class="carousel-image">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="productCard_nextImageBox">
+                            <img alt="Become a kid again and play with snow" src="/image/manali2.png?w=340&amp;dpr=2"
+                                class="carousel-image">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="productCard_nextImageBox">
+                            <img alt="Become a kid again and play with snow" src="/image/manali3.png?w=340&amp;dpr=2"
+                                class="carousel-image">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="productCard_nextImageBox">
+                            <img alt="Become a kid again and play with snow" src="/image/manali4.png?w=340&amp;dpr=2"
+                                class="carousel-image">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="productCard_productExtraDetailsBox productCard_nextImageBox">
+                            <img alt="Manali from Delhi | FREE Solang Valley Trip"
+                                src="/image/manali-from-dehli.jpeg?w=140" class="carousel-image">
+                            <div class="productCard_productExtraDetails">
+                                <div class="productCard_discountLabel">
+                                    SAVE
+                                    <div class="productCard_discountAmountLabel">INR 9,409</div>
+                                </div>
+                                <div class="productCard_disountSubLabel">on this trip</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider end -->
+
+                <!-- Controls start -->
+                <div class="controls">
+                    <span class="arrow left" onclick="prevSlide('carousel_1')">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="arrow right" onclick="nextSlide('carousel_1')">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </div>
+                <!-- Controls end -->
+
+                <!-- Indicators start -->
+                <div class="productCard_indicatorsWrapper">
+                    <div class="productCard_indicator" onclick="currentSlide('carousel_1', 0)"></div>
+                    <div class="productCard_indicator" onclick="currentSlide('carousel_1', 1)"></div>
+                    <div class="productCard_indicator" onclick="currentSlide('carousel_1', 2)"></div>
+                    <div class="productCard_indicator" onclick="currentSlide('carousel_1', 3)"></div>
+                    <div class="productCard_indicator productCard_smIndicator productCard_indicatorActive"
+                        onclick="currentSlide('carousel_1', 4)"></div>
+                </div>
+                <!-- Indicators end -->
+            </div>
+            <!-- Carousel end -->
+        </div>
+    </div>
+
+    <script src="script/scripts.js"></script>
+</body>
+
+</html>
